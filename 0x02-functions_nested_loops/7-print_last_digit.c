@@ -5,20 +5,17 @@
  * @n: number from which to extract last digit
  *
  * Description: Determine last digit of n by
- * isolating remainder of n / 10
+ * isolating remainder of n / 10.
  * Return: the value of the last digit
  */
 int print_last_digit(int n)
 {
-	int ld;
+	n %= 10;
 
 	if (n < 0)
-		n = -n;
-	ld = n % 10;
+		n *= -1;
 
-	if (ld < 0)
-		ld = -ld;
-	_putchar(ld + '0');
+	_putchar(n + '0');
 
-	return (ld);
+	return (n);
 }
