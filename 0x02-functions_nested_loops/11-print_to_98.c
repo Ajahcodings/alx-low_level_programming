@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
- * print_to_98 - prints natural numbers from n to 98
+ * print_to_98 - prints natural number from n to 98
  * @n: number to be counted from
- * Description: prints numbers from user input
- * to 98
+ * Description: prints numbers from user input to 98.
  */
 void print_to_98(int n)
 {
@@ -21,4 +20,5 @@ void print_to_98(int n)
 	}
 	if (n == 98)
 		printf("%d", n);
+	printf("\n");
 }
