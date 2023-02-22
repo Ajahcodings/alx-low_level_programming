@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,18 +5,16 @@
  * @a: number to be added
  * @b: number to be added
  *
- * Description: A simple function to determine
- * the sum of two integers. Receives numbers,
- * adds them toether, and returns result.
+ * description: A simple function to determine the sum of
+ * two integers, Receives numbers, adds them together, and
+ * returns result
  * Return: result of addition
  */
-int add (int a, int b)
+int add(int a, int b)
 {
-	int a;
-	int b;
 	int result;
 
-	result = (a + b);
+	result = a + b;
 
 	return (result);
 }
