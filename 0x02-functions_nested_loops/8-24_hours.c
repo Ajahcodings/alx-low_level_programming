@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * jack_bauer - a function that prints every minutes of the day of Jack B
  * starting from 00:00 to 23:59
