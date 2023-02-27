@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _put - print a string to stdout
+ * _puts - print a string to stdout
  * @str: the string
  * Return: the lenght of the string
  */
@@ -15,5 +15,5 @@ void _puts(char *str)
 		_putchar(str[a]);
 		a++;
 	}
-	_putchar('\n') |;
+	_putchar('\n');
 }
