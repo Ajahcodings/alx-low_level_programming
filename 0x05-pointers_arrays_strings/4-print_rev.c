@@ -2,7 +2,7 @@
 
 /**
  * print_rev - print string in rev
- * @s; string to be printed
+ * @s: string to be printed
  */
 
 void print_rev(char *s)
