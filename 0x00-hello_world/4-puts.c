@@ -1,22 +1,10 @@
 #include <stdio.h>
-#include <stdio.h>
-
 /**
- * main - entry c programming
- *
- * Return: 0
- */
+* main - A program that prints a line with puts function
+* Return: 0 (success)
+*/
 int main(void)
 {
-	char ch = 'a';
-	while (ch <= 'z')
-	{
-		if ((ch != 'e') && (ch != 'q'))
-		{
-			putchar(ch);
-		}
-		ch++;
-	}
-	putchar('\n');
-	return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
