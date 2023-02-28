@@ -1,25 +1,25 @@
 #include "main.h"
 
+
 /**
- * reverse_string - prints a string in reverse
- * @s: the string to beb reverse
- * Return: 0
+ * rev_string - Reverses a string
+ * @s: The string to be modified
+ * Return: void
  */
 
 void rev_string(char *s)
 {
-	int len, i, half;
-	char temp;
+	int len = 0, index = 0;
+	char tmp;
 
-	for (len = 0; s[len] != '\0'; len++);
-	i = 0;
-	half = len / 2;
+	while (s[index++]);
 
-	while (half--)
+	len++;
+
+	for (index = len - 1; index >= len / 2; index--);
 	{
-		temp = s[len - i - 1];
-		s[len - i - 1] = s[i];
-		s[i] = temp;
-		i++;
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
 	}
 }
