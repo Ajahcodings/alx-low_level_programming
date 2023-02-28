@@ -1,11 +1,25 @@
 #include "main.h"
+
 /**
- * reset_to_98 - update the value of var using pointers
- * @n: int to update
+ * reverse_string - prints a string in reverse
+ * @s: the string to beb reverse
  * Return: 0
  */
 
-void reset_to_98(int *n)
+void rev_string(char *s)
 {
-	*n = 98;
+	int len, i, half;
+	char temp;
+
+	for (len = 0; s[len] != '\0'; len++);
+	i = 0;
+	half = len / 2;
+
+	while (half--)
+	{
+		temp = s[len - i - 1];
+		s[len - i - 1] = s[i];
+		s[i] = temp;
+		i++;
+	}
 }
